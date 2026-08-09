@@ -1,56 +1,36 @@
-/* --- Global Styles & Color Theme --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #0f172a; /* Dark background color */
-    color: #e2e8f0;            /* Light text color */
+    background-color: #0f172a; /* Main background color */
+    color: #e2e8f0;
 }
 
-/* --- Profile Section --- */
+header, section {
+    background: #1e293b;       /* Card background */
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
 header {
     text-align: center;
-    background: #1e293b;       /* Dark card background */
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #38bdf8; /* Cyan accent border */
+    border-bottom: 3px solid #38bdf8; /* Accent cyan line */
 }
 
 .profile-pic {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;         /* Makes image circular */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;         /* Makes profile picture round */
     object-fit: cover;
-    border: 3px solid #38bdf8;  /* Cyan ring around picture */
-    margin-bottom: 15px;
+    border: 3px solid #38bdf8;
+    margin-bottom: 10px;
 }
 
-h1 {
-    color: #ffffff;
-    margin: 10px 0 5px 0;
-}
+h1 { margin: 5px 0; color: #ffffff; }
+.subtitle { color: #38bdf8; font-weight: 600; }
+h2 { color: #38bdf8; border-bottom: 1px solid #334155; padding-bottom: 8px; }
 
-.subtitle {
-    color: #38bdf8;
-    font-weight: 600;
-}
-
-/* --- Content Sections --- */
-section {
-    background: #1e293b;
-    padding: 24px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-}
-
-h2 {
-    color: #38bdf8;
-    border-bottom: 2px solid #334155;
-    padding-bottom: 8px;
-}
-
-/* --- Project Cards --- */
 .card {
     background: #0f172a;
     border: 1px solid #334155;
@@ -61,17 +41,20 @@ h2 {
 
 .project-img {
     width: 100%;
-    max-height: 250px;
+    max-height: 220px;
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 10px;
 }
 
-a {
-    color: #38bdf8;
+/* Styled Button for Live Links */
+.btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 4px;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
