@@ -18,8 +18,8 @@ header {
 }
 
 .profile-pic {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;         /* Makes image circular */
     object-fit: cover;
     border: 3px solid #38bdf8;  /* Cyan ring around picture */
