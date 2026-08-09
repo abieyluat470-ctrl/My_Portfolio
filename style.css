@@ -1,93 +1,82 @@
-/* --- Global Styles & Color Theme --- */
+/* --- Global Styles --- */
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0; /* Removed heavy outer padding */
+    padding: 15px;
     background-color: #0f172a;
     color: #e2e8f0;
-    line-height: 1.6;
 }
 
-/* --- Centered Container (Fixes wide, stretched layout) --- */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px 16px;
-}
-
-/* --- Profile Section --- */
+/* --- Header & Subtitle Alignment --- */
 header {
     text-align: center;
     background: #1e293b;
-    padding: 24px 20px; /* Reduced vertical padding */
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #38bdf8; /* Made accent line subtle */
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-bottom: 3px solid #38bdf8;
 }
 
 .profile-pic {
-    width: 90px;  /* Increased slightly for better visual proportions */
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #38bdf8;
-    margin-bottom: 12px;
+    border: 3px solid #38bdf8;
+    margin-bottom: 10px;
 }
 
 h1 {
     color: #ffffff;
-    font-size: 1.75rem;
-    margin: 8px 0 4px 0;
+    margin: 5px 0;
+    font-size: 1.5rem;
 }
 
+/* Fits long subtitle text neatly on all screens */
 .subtitle {
     color: #38bdf8;
-    font-weight: 500;
-    margin: 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 90%;
+    margin: 8px auto 0 auto;
+    word-wrap: break-word;
 }
 
-/* --- Content Sections --- */
+/* --- Content Sections & Compact Gaps --- */
 section {
     background: #1e293b;
-    padding: 20px 24px; /* Scaled down padding */
-    margin-bottom: 16px;
-    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
 }
 
 h2 {
     color: #38bdf8;
-    font-size: 1.25rem;
-    border-bottom: 1px solid #334155; /* Thinner accent line */
-    padding-bottom: 8px;
+    font-size: 1.1rem;
     margin-top: 0;
-    margin-bottom: 12px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 6px;
 }
 
 /* --- Project Cards --- */
 .card {
     background: #0f172a;
     border: 1px solid #334155;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 12px 0;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
 }
 
-/* Fixes top banner/image blowing out visually */
 .project-img {
     width: 100%;
-    max-height: 160px; /* Reduced height to keep banners compact */
+    max-height: 200px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    display: block;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 a {
     color: #38bdf8;
     text-decoration: none;
-    font-weight: 500;
-}
-
-a:hover {
-    text-decoration: underline;
 }
